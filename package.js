@@ -14,5 +14,5 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use('tinytest');
   api.use('ficshelf:media-query');
-  api.addFiles(['ficshelf:media-query-tests.coffee'], 'client');
+  api.addFiles(['ficshelf:media-query-tests.js'], 'client');
 });
