@@ -53,34 +53,34 @@ if Meteor.isClient
       Session.set "device-retina", false
 
 
-    UI.registerHelper "screensize", ->
+    Template.registerHelper "screensize", ->
       Session.get "device-screensize"
 
-    UI.registerHelper "screensize_small", ->
+    Template.registerHelper "screensize_small", ->
       (Session.get "device-screensize") is "small"
 
-    UI.registerHelper "screensize_medium", ->
+    Template.registerHelper "screensize_medium", ->
       (Session.get "device-screensize") is "medium"
 
-    UI.registerHelper "screensize_large", ->
+    Template.registerHelper "screensize_large", ->
       (Session.get "device-screensize") is "large"
 
-    UI.registerHelper "screensize_xlarge", ->
+    Template.registerHelper "screensize_xlarge", ->
       (Session.get "device-screensize") is "xlarge"
 
-    UI.registerHelper "screensize_xxlarge", ->
+    Template.registerHelper "screensize_xxlarge", ->
       (Session.get "device-screensize") is "xxlarge"
 
 
-    UI.registerHelper "orientation", ->
+    Template.registerHelper "orientation", ->
       Session.get "device-orientation"
 
-    UI.registerHelper "retina", ->
+    Template.registerHelper "retina", ->
       Session.get "device-retina"
 
-    UI.registerHelper "portrait", ->
+    Template.registerHelper "portrait", ->
       (Session.get "device-orientation") is "portrait"   
 
-    UI.registerHelper "landscape", ->
+    Template.registerHelper "landscape", ->
       (Session.get "device-orientation") is "landscape"     
   return

@@ -25,33 +25,33 @@ The following helpers are exposed:
 ----------------------------------
 
 ```
-  UI.registerHelper "screensize", ->
+  Template.registerHelper "screensize", ->
     Session.get "screensize"
     
-  UI.registerHelper "screensize_small", ->
+  Template.registerHelper "screensize_small", ->
     (Session.get "screensize") is "small"
     
-  UI.registerHelper "screensize_medium", ->
+  Template.registerHelper "screensize_medium", ->
     (Session.get "screensize") is "medium"
     
-  UI.registerHelper "screensize_large", ->
+  Template.registerHelper "screensize_large", ->
     (Session.get "screensize") is "large"
     
-  UI.registerHelper "screensize_xlarge", ->
+  Template.registerHelper "screensize_xlarge", ->
     (Session.get "screensize") is "xlarge"
     
-  UI.registerHelper "screensize_xxlarge", ->
+  Template.registerHelper "screensize_xxlarge", ->
     (Session.get "screensize") is "xxlarge"
         
-  UI.registerHelper "orientation", ->
+  Template.registerHelper "orientation", ->
     Session.get "orientation"
     
-  UI.registerHelper "retina", ->
+  Template.registerHelper "retina", ->
     Session.get "retina"
     
-  UI.registerHelper "portrait", ->
+  Template.registerHelper "portrait", ->
     (Session.get "orientation") is "portrait"   
   
-  UI.registerHelper "landscape", ->
+  Template.registerHelper "landscape", ->
     (Session.get "orientation") is "landscape"     
 ```
