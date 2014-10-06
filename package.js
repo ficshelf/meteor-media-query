@@ -1,5 +1,5 @@
 Package.describe({
-  summary: "Sets reactive variables [device-screensize, device-orientation, device-retina]
+  summary: "Sets reactive variables [device-screensize, device-orientation, device-retina]"
   version: "1.0.5",
   git: "https://github.com/ficshelf/meteor-media-query.git"
 });
