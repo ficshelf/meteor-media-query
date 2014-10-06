@@ -4,8 +4,22 @@ meteor-media-query
 Responsive design helpers for Meteor JS
 ---------------------------------------
 
-Exposed Reactive Variables: screensize, retina, orientation
+Exposed Reactive Variables: device-screensize, device-retina, device-orientation
 
+```
+Possible values for **device-screensize** are:
+
+  small, medium, large, xlarge, xxlarge
+
+Possible values for **device-orientation** are:
+
+  portrait, landscape
+  
+Possible values for **device-retina** are:
+
+  true, false
+  
+```
 
 The following helpers are exposed:
 ----------------------------------
@@ -28,8 +42,7 @@ The following helpers are exposed:
     
   UI.registerHelper "screensize_xxlarge", ->
     (Session.get "screensize") is "xxlarge"
-    
-    
+        
   UI.registerHelper "orientation", ->
     Session.get "orientation"
     
